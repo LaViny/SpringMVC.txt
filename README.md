@@ -28,3 +28,4 @@ commons-logging-1.1.1.jar  日志
    @requestMapping("/request2")在方法前添加时 告诉控制器这个请求对应的方法。若该方法的类也有@requestMapping();时，那请求路径就要将类前的加上。
    @requestMapping(value="/request3",method=requestMethod.POST);//指定请求方式，若此时请求路径正确，请求方式错误，则抛出405异常。
    @requestMapping();中可以放入参数 params 和hearders 来进行过滤。
+4.pojo.通过在表单中设置标签的name属性进行相应的参数值传递到相应的对象，并根据参数值，对对象赋值。也可以通过级联属性进行赋值。
